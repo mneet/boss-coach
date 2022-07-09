@@ -1,16 +1,18 @@
 {
-  "name": "obj_dudu",
   "spriteId": {
     "name": "spr_dudu_idle",
     "path": "sprites/spr_dudu_idle/spr_dudu_idle.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
-  "parentObjectId": null,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_char",
+    "path": "objects/obj_char/obj_char.yy",
+  },
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -22,7 +24,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -30,6 +34,7 @@
     "path": "folders/Objects/Characters.yy",
   },
   "resourceVersion": "1.0",
+  "name": "obj_dudu",
   "tags": [],
   "resourceType": "GMObject",
 }

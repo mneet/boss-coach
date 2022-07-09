@@ -1,16 +1,18 @@
 {
-  "name": "obj_bob",
   "spriteId": {
     "name": "spr_bob_idle",
     "path": "sprites/spr_bob_idle/spr_bob_idle.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": true,
   "managed": true,
-  "parentObjectId": null,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_char",
+    "path": "objects/obj_char/obj_char.yy",
+  },
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -24,7 +26,6 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,6 +34,7 @@
     "path": "folders/Objects/Characters.yy",
   },
   "resourceVersion": "1.0",
+  "name": "obj_bob",
   "tags": [],
   "resourceType": "GMObject",
 }
