@@ -11,6 +11,7 @@ spr_attack		= spr_dudu_attack;
 spr_knockdown	= spr_dudu_death;
 spr_heal		= spr_dudu_attack;
 spr_hit			= spr_dudu_hit;
+spr_walk		= spr_dudu_walk;
 
 knockdown = function()
 {

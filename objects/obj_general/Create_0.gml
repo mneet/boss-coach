@@ -4,7 +4,7 @@
 key_list = ds_list_create();
 totaltime = 0;
 totalerror = 0;
-keynum = 1;
+keynum = 10;
 
 
 // Set deltatime for time
@@ -20,21 +20,19 @@ totalerror = 0;
 var i;
 for (i=0;i<keynum;i+=1)
 {
-	ds_list_add(key_list, choose("Q","W","E","R"));	
+	ds_list_add(key_list, choose("Q","W","E","R","J","K","L"));	
 }	
 
 
 
 play = function()
 {
-	if (keyboard_check_pressed(ord("Q") || ord("W") || ord("E") || ord("R")))
+	if (keyboard_check_pressed(ord("Q") || ord("W") || ord("E") || ord("R") || ord("J") || ord("K") || ord("L") ))
 	{
-		//check if key pressed is the correct one
+		//checando a tecla
 		if (keyboard_check_pressed(ord(ds_list_find_value(key_list,0))))
 		{
-			ds_list_delete(key_list,0);
-			totaltime += deltatime;
-			deltatime = 0;
+			ds_list_delete(key_list,0);		
 		}
 		else
 		{
@@ -44,12 +42,20 @@ play = function()
 	}
 		
 	if (ds_list_empty(key_list))
-	{
+	{		
+		if (totalerror < keynum/2)
+		{
+			obj_bob.dano -= totalerror;
+			obj_bob.mystate = "attacking";	
+		}
+		else
+		{
+			obj_enemy.mystate = "attacking";	
+		}
 		instance_destroy();
+		
 	}
-	deltatime += 1;
 
 
 
-	show_debug_message(totalerror);	
 }

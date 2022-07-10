@@ -11,6 +11,7 @@ spr_attack		= spr_hero_attack;
 spr_knockdown	= spr_hero_death;
 spr_heal		= spr_hero_block;
 spr_hit			= spr_hero_hit;
+spr_walk		= spr_hero_walk;
 
 
 knockdown = function()

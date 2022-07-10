@@ -32,8 +32,8 @@ attack = function()
 	if (image_index > image_number - 1 && sprite_index = spr_attack) 
 	{
 		mystate = "idle";
-		obj_enemy.mystate = "hitt";
-		obj_enemy.hp_atual -= dano;
+		obj_char.mystate = "hitt";
+		obj_char.hp_atual -= dano;
 		show_debug_message(dano);
 	}
 }
@@ -59,7 +59,6 @@ hit = function()
 	sprite_index = spr_hit;
 	if (image_index > image_number - 1 && sprite_index = spr_hit && hp_atual > 0) mystate = "idle";
 	if(hp_atual <= 0) mystate = "knocked";
-	
 }
 
 walk = function()

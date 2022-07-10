@@ -9,3 +9,4 @@ spr_attack		= spr_bob_fullattack;
 spr_knockdown	= spr_bob_crouch;
 spr_heal		= spr_bob_heal;
 spr_hit			= spr_bob_hit;
+spr_walk		= spr_bob_run;

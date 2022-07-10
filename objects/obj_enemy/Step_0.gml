@@ -34,7 +34,7 @@ switch(mystate)
 
 
 //Debug
-if (keyboard_check_pressed(vk_space)) mystate = "attacking";
+//if (keyboard_check_pressed(vk_space)) mystate = "attacking";
 if (keyboard_check_pressed(ord("1"))) mystate = "healing";
 if (keyboard_check_pressed(ord("2"))) mystate = "knocked";
 if (keyboard_check_pressed(ord("3"))) mystate = "hitt";
