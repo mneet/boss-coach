@@ -11,8 +11,8 @@ spr_walk		= 0;
 
 
 //Iniciando variáveis
-max_hp = 10;
-hp_atual = max_hp
+max_hp = 0;
+hp_atual = max_hp;
 mp = 5;
 dano = 5;
 
@@ -50,6 +50,12 @@ knockdown = function()
 {
 	if (sprite_index != spr_knockdown) image_index = 0;
 	sprite_index = spr_knockdown;
+	if (image_index > image_number -1 && sprite_index = spr_knockdown) 
+	{
+		image_alpha *= 0.95;
+		image_speed = 0;
+	}
+	if (image_alpha <= 0) instance_destroy();
 }
 
 hit = function()

@@ -14,7 +14,9 @@ spr_walk		= 0;
 max_hp = 10;
 hp_atual = max_hp
 mp = 5;
-dano = 5;
+danototal = 5;
+dano = danototal;
+
 
 mystate = "idle";
 
@@ -32,9 +34,12 @@ attack = function()
 	if (image_index > image_number - 1 && sprite_index = spr_attack) 
 	{
 		mystate = "idle";
-		obj_enemy.mystate = "hitt";
-		obj_enemy.hp_atual -= dano;
-		show_debug_message(dano);
+		if (instance_exists(obj_enemy))
+		{
+			obj_enemy.mystate = "hitt";
+			obj_enemy.hp_atual -= dano;
+		}
+		dano = danototal;
 	}
 }
 

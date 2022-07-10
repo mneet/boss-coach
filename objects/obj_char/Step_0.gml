@@ -35,7 +35,7 @@ switch(mystate)
 
 //Debug
 if (keyboard_check_pressed(vk_space)) mystate = "attacking";
-if (keyboard_check_pressed(ord("1"))) mystate = "healing";
-if (keyboard_check_pressed(ord("2"))) mystate = "knocked";
+if (keyboard_check_pressed(ord("1"))) instance_create_layer(x, y, layer, obj_spam);
+if (keyboard_check_pressed(ord("2"))) instance_create_layer(x, y, layer, obj_tyles);
 if (keyboard_check_pressed(ord("3"))) mystate = "hitt";
 if (keyboard_check_pressed(ord("4"))) mystate = "walking";

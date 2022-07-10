@@ -32,10 +32,10 @@ switch(mystate)
 }
 
 
-
+show_debug_message(hp_atual);
 //Debug
 //if (keyboard_check_pressed(vk_space)) mystate = "attacking";
-if (keyboard_check_pressed(ord("1"))) mystate = "healing";
-if (keyboard_check_pressed(ord("2"))) mystate = "knocked";
-if (keyboard_check_pressed(ord("3"))) mystate = "hitt";
-if (keyboard_check_pressed(ord("4"))) mystate = "walking";
+//if (keyboard_check_pressed(ord("1"))) mystate = "healing";
+//if (keyboard_check_pressed(ord("2"))) mystate = "knocked";
+//if (keyboard_check_pressed(ord("3"))) mystate = "hitt";
+//if (keyboard_check_pressed(ord("4"))) mystate = "walking";
