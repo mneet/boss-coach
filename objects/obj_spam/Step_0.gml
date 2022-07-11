@@ -25,12 +25,14 @@ if (start && timer > 0)
 if (timer <= 0 && force > 0)
 {
 	obj_char.mystate = "attacking";
-	instance_destroy();		
+	instance_destroy();
+	global.turno = false;
 }
 
 if (force <= 0) 
 {
 	instance_destroy();	
+	global.turno = false;
 }
 
 show_debug_message(timer);

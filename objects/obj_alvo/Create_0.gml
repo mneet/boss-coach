@@ -1,10 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-starttimer--
-if(starttimer <= 0) start = true;
 
-if(start) play();
+//Iniciando auto-destruição
+alarm[0] = room_speed * .8;
 
-
-		
+show_debug_message("nasci");

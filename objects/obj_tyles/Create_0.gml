@@ -2,8 +2,10 @@
 // You can write your code in this editor
 
 key_list = ds_list_create();
-totaltimer = room_speed * 3;
+totaltimer = room_speed * 4;
 timer = totaltimer;
+starttimer = room_speed * 1;
+start = false;
 totalerror = 0;
 keynum = 10;
 
@@ -36,11 +38,10 @@ play = function()
 		}		
 	}
 		
-	if (ds_list_empty(key_list) || timer <= 0)
+	if (ds_list_empty(key_list) || timer <= 0 || totalerror > obj_char.dano)
 	{		
-		if (totalerror < keynum/2 && timer > 0)
-		{
-			obj_bob.dano -= totalerror;
+		if (totalerror < obj_char.dano && timer > 0)
+		{			
 			obj_bob.mystate = "attacking";	
 		}
 		else if (instance_exists(obj_enemy))
@@ -48,6 +49,7 @@ play = function()
 			obj_enemy.mystate = "attacking";	
 		}
 		instance_destroy();
+		global.turno = false;
 		
 	}
 
