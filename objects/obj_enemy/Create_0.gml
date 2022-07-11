@@ -16,7 +16,7 @@ hp_atual = max_hp;
 mp = 5;
 dano = 5;
 
-mystate = "idle";
+mystate = "walking";
 
 iddle = function()
 {
@@ -71,5 +71,12 @@ walk = function()
 {
 	image_speed = 1;
 	if (sprite_index != spr_walk) image_index = 0;
-	sprite_index = spr_walk;	
+	sprite_index = spr_walk;
+	
+	if (x < 500) hspeed = 2;
+	else
+	{
+		hspeed = 0;
+		mystate = "idle";
+	}
 }

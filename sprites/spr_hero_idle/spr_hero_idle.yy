@@ -47,7 +47,7 @@
     "spriteId": {"name":"spr_hero_idle","path":"sprites/spr_hero_idle/spr_hero_idle.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 3.0,
+    "playbackSpeed": 2.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
