@@ -13,4 +13,4 @@ if (timer <= 0 && !global.turno)
 	timer = ttimer;
 }
 
-show_debug_message(timer); 
+ 

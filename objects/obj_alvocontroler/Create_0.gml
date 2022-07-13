@@ -11,7 +11,7 @@ pontos = 0;
 
 
 //Velocidade de criação dos alvos
-spawner_speed = 2;
+spawner_speed = 1.8;
 
 //Iniciando alarme a cada 5 segundos
 alarm[0] = room_speed;

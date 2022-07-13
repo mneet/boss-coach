@@ -13,4 +13,4 @@ for (i=0;i<ds_list_size(key_list);i++)
 
 var _timer = (timer / totaltimer) * 100;
 //Desenhando a barra de hp do boss
-draw_healthbar( 100, 50 , 800, 55, _timer, c_black, c_red, c_green, 0, true, 1);
+draw_healthbar( room_width / 5, 50 , room_width / 5 * 4 - 50, 65, _timer, c_black, c_red, c_green, 0, true, 1);

@@ -3,9 +3,9 @@
 
 finicial = 50;
 force = finicial;
-ftotal = 100;
-click = 5;
-tforce = .45;
+ftotal = 50;
+click = 4;
+tforce = .48;
 
 start = false;
-timer = room_speed * 2;
+timer = room_speed * 5;

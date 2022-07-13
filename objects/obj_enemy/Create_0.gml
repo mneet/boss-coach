@@ -20,12 +20,14 @@ mystate = "walking";
 
 iddle = function()
 {
+	hspeed = 0;
 	sprite_index = spr_idle;
 	image_speed = 1;
 }
 
 attack = function()
 {
+	hspeed = 0;
 	image_speed = 1;
 	if (sprite_index != spr_attack) image_index = 0;
 	sprite_index = spr_attack;
@@ -40,6 +42,7 @@ attack = function()
 
 heal = function()
 {
+	hspeed = 0;
 	image_speed = 1;
 	if (sprite_index != spr_heal) image_index = 0;
 	sprite_index = spr_heal;
@@ -48,6 +51,7 @@ heal = function()
 
 knockdown = function()
 {
+	hspeed = 0;
 	if (sprite_index != spr_knockdown) image_index = 0;
 	sprite_index = spr_knockdown;
 	if (image_index > image_number -1 && sprite_index = spr_knockdown) 
@@ -60,6 +64,7 @@ knockdown = function()
 
 hit = function()
 {
+	hspeed = 0;
 	image_speed = 1;
 	if (sprite_index != spr_hit) image_index = 0;
 	sprite_index = spr_hit;

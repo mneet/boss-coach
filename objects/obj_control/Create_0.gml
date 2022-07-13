@@ -6,3 +6,4 @@ timer = ttimer;
 
 start = false;
 global.turno = false;
+

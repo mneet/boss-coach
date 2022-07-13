@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_alvo",
-    "path": "sprites/spr_alvo/spr_alvo.yy",
+    "name": "spr_botao_bolinha",
+    "path": "sprites/spr_botao_bolinha/spr_botao_bolinha.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,7 +25,6 @@
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
